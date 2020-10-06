@@ -1,0 +1,77 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px [col3-end];
+        grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+    }
+
+    .grid1 {
+        background-color: red;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .grid2 {
+        background-color: yellow;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .grid4 {
+        background-color: orange;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .grid5 {
+        background-color: blue;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .grid6 {
+        background-color: brown;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .grid7 {
+        background-color: purple;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .one {
+        grid-column: col1-start / col3-start;
+        grid-row: row1-start ;
+    }
+    .two {
+        grid-column: col3-start ;
+        grid-row: row1-start / row2-end;
+    }
+    .four {
+        grid-column: col2-start ;
+        grid-row: row2-start ;
+    }
+    .five {
+      grid-column: col3-start ;
+      grid-row: row3-start / row2-end ;
+    }
+    .six {
+      grid-column: col2-start ;
+      grid-row: row3-start /row2-end ;
+    }
+    .seven {
+      grid-column: col1-start ;
+      grid-row: row2-start / row3-end ;
+    }
